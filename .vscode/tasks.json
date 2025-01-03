@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "ceedlingTest",
+        "type": "shell",
+        "command": "ceedling test:all",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Task for running tests with Ceedling"
+      }
+    ]
+  }
+  

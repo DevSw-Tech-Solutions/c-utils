@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Ceedling Test Explorer Debug (Mac)", // Remove the "(Mac)" on macOS.
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "ceedlingTest",
+            "program": "${workspaceFolder}/build/test/out/${command:ceedlingExplorer.debugTestExecutable}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for lldb",
+                    "text": "settings set target.pretty-printing true",
+                    "ignoreFailures": true
+                }
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "osx": {}
+        },
+        {
+            "name": "Ceedling Test Explorer Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "ceedlingTest",
+            "program": "${workspaceFolder}/build/test/out/${command:ceedlingExplorer.debugTestExecutable}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/ProgramData/mingw64/mingw64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "windows": {}
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "[c]": {
+    "editor.tabSize": 3,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "ceedlingExplorer.debugConfiguration": "Ceedling Test Explorer Debug",
+    "ceedlingExplorer.projectPath": "${workspaceFolder}",
+    "editor.rulers": [
+        120
+    ],
+    "favorites.resources": []
+}
