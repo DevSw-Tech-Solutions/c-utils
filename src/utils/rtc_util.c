@@ -27,7 +27,7 @@ bool rtc_IsValid(const rtc_t *pRtc) {
    if ((pRtc->month <= MAX_MONTH) && (pRtc->month >= MIN_MONTH) && (pRtc->hour <= MAX_HOUR) &&
        (pRtc->minute <= MAX_MINUTE) && (pRtc->second <= MAX_SECOND) && (pRtc->timezone >= MIN_TIMEZONE) &&
        (pRtc->timezone <= MAX_TIMEZONE) && (pRtc->day <= rtc_daysInMonth(pRtc->month, pRtc->year)) &&
-       (pRtc->day >= MIN_DAY)) {
+       (pRtc->day >= MIN_DAY) && (pRtc->year > 0)) {
       return (true);
    } else {
       return (false);
